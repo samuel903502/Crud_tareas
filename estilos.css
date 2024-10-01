@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 30px 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.formulario {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.formulario h2 {
+    margin-top: 0;
+    color: #555;
+}
+
+.formulario input[type="text"],
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.formulario button {
+    background: #28a745;
+    color: #fff;
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.formulario button:hover {
+    background: #218838;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+table thead {
+    background: #007bff;
+    color: #fff;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table tr:hover {
+    background: #f1f1f1;
+}
+
+a.editar {
+    color: #ffc107;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+a.eliminar {
+    color: #dc3545;
+    text-decoration: none;
+}
+
+a.editar:hover {
+    text-decoration: underline;
+}
+
+a.eliminar:hover {
+    text-decoration: underline;
+}
+
+
+/* Estilos para los estados */
+.estado {
+    padding: 5px 10px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.estado-pendiente {
+    background-color: #dc3545; /* Rojo */
+}
+
+.estado-en-progreso {
+    background-color: #ffc107; /* Amarillo */
+    color: #212529; /* Texto oscuro para mejor contraste */
+}
+
+.estado-completada {
+    background-color: #28a745; /* Verde */
+}
+
+/* Opcional: Estilos para el select en formularios */
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    appearance: none;
+    background-color: #fff;
+}
+
+.formulario option {
+    padding: 10px;
+}
+/* ... Código existente ... */
+
+/* Aplicar estilos a los selects según el estado */
+.formulario select.estado-pendiente {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.formulario select.estado-en-progreso {
+    background-color: #ffc107;
+    color: #212529;
+}
+
+.formulario select.estado-completada {
+    background-color: #28a745;
+    color: #fff;
+}
